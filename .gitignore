@@ -1,24 +1,34 @@
-# build output
-dist/
-# generated types
-.astro/
-
-# dependencies
+# Node modules
 node_modules/
 
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# Build output
+dist/
+public/ # If you're building to a 'public' directory
+_site/ # Common output directory for static site generators
 
+# Astro specific files
+.astro/
+*.tsbuildinfo
 
-# environment variables
+# Environment variables
 .env
-.env.production
+*.env
 
-# macOS-specific files
+# IDE and OS specific files
 .DS_Store
+.vscode/ # If you don't want to share VS Code settings
+*.log
+.eslintcache
+.pnpm-store
 
-# jetbrains setting folder
-.idea/
+# Package manager lock files (choose based on your package manager)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Vercel and Netlify build artifacts
+.vercel/
+.netlify/
+
+# Other potential temporary files
+tmp/
